@@ -8,7 +8,7 @@ var lastScrollTop = 0;
 $(window).scroll(function(event){
    var st = $(this).scrollTop();
    if (st > lastScrollTop){
-        if(yPos <= racketContainer.clientHeight/2){
+        if(yPos <= racketContainer.clientHeight/4){
             racket.style.transform = "translate(" + xPos + "px,-" + yPos + "px)"
             xPos+=5
             yPos+=5

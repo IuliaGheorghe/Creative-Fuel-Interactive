@@ -379,6 +379,12 @@
         padding: 30px;
     }
 
+    .second .second-right p,
+    .third .third-left p{
+        font-size: 20px;
+        line-height: 1.3;
+    }
+
     .second .second-left img{
         width: 60%;
         transform: translateX(0);
@@ -407,6 +413,11 @@
 
     .forth-bottom{
         grid-template-columns: auto;
+    }
+
+    .forth-up div{
+        font-size: 30px;
+        line-height: 1.1;
     }
 }
 
@@ -441,7 +452,12 @@
     }
 
     .forth-up div{
-        font-size: 30px;
+        font-size: 25px;
+        line-height: 1.1;
+    }
+
+    .forth-bottom .card h3{
+        font-size: 22px;
         line-height: 1.1;
     }
 

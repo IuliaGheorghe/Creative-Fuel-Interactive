@@ -14,6 +14,7 @@ header nav a{
     min-height: 700px;
     padding: 200px 50px;
     display: flex;
+    overflow-x: hidden !important;
 }
 
 .main>div{
@@ -291,6 +292,14 @@ header nav a{
         box-sizing: border-box;
         width: 100% !important;
     }
+
+    .main-left h1,
+    .second-left h2{
+        font-size: 35px;
+        line-height: 1.25;
+    }
+
+    
 }
 
 @media screen and (max-width: 530px) {
@@ -325,11 +334,20 @@ header nav a{
     .quality-card>div p{
         padding: 15px 5px;
     }
+
+    .main-left h1{
+        font-size: 30px;
+        line-height: 1.2;
+    }
 }
 
 @media screen and (max-width: 375px){
     .main-right img{
         transform: scale(0.4) !important;
+    }
+
+    .quality-card>div span:not(.checkmark-sign){
+        font-size: 25px;
     }
 }
 
