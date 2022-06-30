@@ -1,0 +1,335 @@
+header nav a{
+    color: #272D2D;
+}
+
+#mobile-menu-btn .fa-solid{
+    color: #272D2D;
+}
+
+.main{
+    min-height: 700px;
+    padding: 200px 50px;
+    display: flex;
+}
+
+.main>div{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px ;
+}
+
+.main>div.main-left{
+    align-items: flex-start;
+}
+
+.page-name{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 38px;
+    color: #FF6F59;
+}
+
+.main-left h1{
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 58px;
+    color: #272D2D;
+    padding: 30px 0;
+    text-transform: capitalize;
+}
+
+.main-left p{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 26px;
+    color: #272D2D;
+}
+
+ @-webkit-keyframes rotate-center {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  @keyframes rotate-center {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  
+
+.main-right{
+    background: url(../assets/pngs/png-group.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    -webkit-animation: rotate-center 6s ease-in-out infinite both;
+    animation: rotate-center 6s ease-in-out infinite both;
+}
+
+@-webkit-keyframes rotate-center-reverse {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(-360deg);
+              transform: rotate(-360deg);
+    }
+  }
+  @keyframes rotate-center-reverse {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(-360deg);
+              transform: rotate(-360deg);
+    }
+  }
+
+.main-right img{
+    transform: scale(1.1);
+    -webkit-animation: rotate-center-reverse 6s ease-in-out infinite both;
+    animation: rotate-center-reverse 6s ease-in-out infinite both;
+}
+
+.second{
+    min-height: 700px;
+    background-color: #272d2d;
+    background: url("../assets/decorations/bg.svg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px;
+    display: flex;
+    overflow-x: hidden;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    position: relative;
+}
+
+.second>div{
+    width: 50%;
+}
+
+.second>div:nth-child(1){
+    display: flex;
+    align-items: center;
+}
+
+.second-left h2{
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 58px;
+    color: #FFFFFF;
+    padding-top: 40px;
+}
+
+.quality-card{
+    margin: 40px 0;
+}
+
+.quality-card>div span{
+    padding: 5px;
+}
+
+.quality-card>div span:nth-child(1){
+    display: inline-flex;
+    align-items: center;
+}
+
+.quality-card .checkmark-sign img{
+    width: 25px;
+}
+
+.quality-card>div span:not(.checkmark-sign){
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 38px;
+    color: #FFFFFF;
+}
+
+.quality-card>div p{
+    padding: 5px;
+    padding-left: 45px;
+    padding-top: 10px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+
+@keyframes myAnim3 {
+    0% {
+        transform: scale3d(1, 1, 1);
+    }
+
+    30% {
+        transform: scale3d(1.25, 0.75, 1);
+    }
+
+    40% {
+        transform: scale3d(0.75, 1.25, 1);
+    }
+
+    50% {
+        transform: scale3d(1.15, 0.85, 1);
+    }
+
+    65% {
+        transform: scale3d(0.95, 1.05, 1);
+    }
+
+    75% {
+        transform: scale3d(1.05, 0.95, 1);
+    }
+
+    100% {
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+.second-racket-overflow{
+    position: absolute;
+    bottom: 50px;
+    left: -50px;
+    animation: myAnim3 3s ease-in-out 0ms infinite normal both;
+
+}
+
+@media screen and (max-width: 1420px) {
+    .main-right img{
+        transform: scale(1) !important;
+    }
+}
+
+@media screen and (max-width: 1275px) {
+    .main-right img{
+        transform: scale(0.9) !important;
+    }
+}
+
+@media screen and (max-width: 1240px) {
+    .second{
+        flex-direction: column;
+    }
+    .second .second-left,
+    .second .second-right{
+        width: 100%;
+    }
+
+    .second .second-racket-overflow{
+        mix-blend-mode: screen;
+        opacity: 0.4;
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+    .main-right img{
+        transform: scale(0.8) !important;
+    }
+
+    .main-left{
+        width: 60% !important;
+    }
+
+    .main-right{
+        width: 40% !important;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .main{
+        padding: 100px 20px 50px;
+    }
+    .main-right img{
+        transform: scale(0.7) !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main{
+        flex-direction: column-reverse;
+    }
+    
+    .main>div{
+        box-sizing: border-box;
+        width: 100% !important;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .main>div.main-left{
+        padding: 20px;
+    }
+
+    .main>div{
+        padding: 20px;
+    }
+
+    .second>div:nth-child(1){
+        text-align: center;
+    }
+
+    .quality-card{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .second{
+        padding: 16px;
+    }
+
+    .main-right img{
+        transform: scale(0.5) !important;
+    }
+
+    .quality-card>div p{
+        padding: 15px 5px;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .main-right img{
+        transform: scale(0.4) !important;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .main-right img{
+        transform: scale(0.3) !important;
+    }
+
+    .main-left h1{
+        word-break: break-all;
+    }
+}

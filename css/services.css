@@ -1,0 +1,561 @@
+.main{
+    background-color: #272d2d;
+    background: url("../assets/decorations/bg.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px;
+    display: flex;
+    min-height: 300px;
+    align-items: flex-end;
+    overflow-x: hidden;
+    
+}
+
+@keyframes myAnim {
+    0%,
+    100% {
+        transform: translateY(30px) rotate(0deg);
+        transform-origin: 50% 50%;
+    }
+
+    10% {
+        transform: translateY(30px) rotate(8deg);
+    }
+
+    20%,
+    40%,
+    60% {
+        transform: translateY(30px) rotate(-10deg);
+    }
+
+    30%,
+    50%,
+    70% {
+        transform: translateY(30px) rotate(10deg);
+    }
+
+    80% {
+        transform: translateY(30px) rotate(-8deg);
+    }
+
+    90% {
+        transform: translateY(30px) rotate(8deg);
+    }
+}
+
+.main h1{
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 70px;
+    color: #fff;
+    mix-blend-mode: overlay;
+}
+
+.s1{
+    min-height: 400px;
+    background: url(../assets/decorations/vector-11.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.s1>div{
+    width: 35%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.s1>div:nth-child(2){
+    align-items: center;
+}
+
+.s1-left{
+    background: url(../assets/svgs/1.svg);
+    background-repeat: no-repeat;
+}
+
+.s1-left h2{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 38px;
+    color: #272D2D;
+    padding: 30px 0;
+}
+
+.s1-left p{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 26px;
+    color: #272D2D;
+}
+
+.s1-right div>img{
+    width: 150px;
+    transform: translateY(20px) rotate(-8deg);
+    animation: myAnim 4s ease-in-out 0s infinite normal both;
+
+}
+
+.s1-card{
+    background: #F2F9FC;
+    box-shadow: 0px 10px 30px rgba(0, 49, 82, 0.1);
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.card-desc{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 38px;    
+    color: #FF6F59;
+}
+
+.checkmarks{
+    margin: 15px 0;
+}
+
+.checkmarks>div{
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.check img{
+    width: 25px;
+}
+
+.checkmarks div span{
+    padding: 2px 5px;
+}
+
+.checkmarks div span:not(.check){
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: rgba(39, 45, 45, 0.9);
+
+}
+
+.s2{
+    min-height: 400px;
+    background-color: #F2F9FC;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.s2>div{
+    width: 35%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.s2-left div:nth-child(1){
+    display: flex;
+    justify-content: flex-end;
+    height: 150px;
+}
+
+.s2-left>div>img{
+    width: 150px;
+    transform: scaleX(-1) rotate(-50deg) translateY(80px);
+    animation: myAnim 4s ease-in-out 0s infinite normal both;
+
+}
+
+.s2-left div:nth-child(2){
+    background: #FFFFFF;
+    box-shadow: 0px 10px 30px rgba(0, 49, 82, 0.1);
+    border-radius: 20px;
+    padding: 50px;
+}
+
+.s2-left div:nth-child(2) p{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: rgba(39, 45, 45, 0.9);
+
+}
+
+.s2-right{
+    margin-top: 150px;
+    background: url(../assets/svgs/2.svg);
+    background-repeat: no-repeat;
+}
+
+.s2-right h2{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 38px;
+    color: #272D2D;
+    padding-bottom: 20px;
+}
+
+.s2-right p{
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 26px;
+    color: #272D2D;
+
+}
+
+.s3{
+    min-height: 400px;
+    padding: 50px;
+}
+
+.s3-outer{
+    width: 30%;
+    text-transform: capitalize;
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 58px;
+}
+
+.s3-inner{
+    background: url(../assets/decorations/vector-14.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.s3-inner-top, .s3-inner-bottom{
+    padding-top:50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.s3-inner-top-left, .s3-inner-top-right{
+    width: 35%;
+}
+
+.s3-inner-top-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: url(../assets/svgs/3.svg);
+    background-repeat: no-repeat;
+}
+
+.s3-inner-top-left h2{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 38px;
+    color: #272D2D;
+    padding-bottom: 30px;
+
+}
+
+.s3-inner-top-left p{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 26px;
+    color: #272D2D;
+
+}
+
+.s3-inner-top-right{
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.s3-inner-top-right img{
+    width: 80%;
+}
+
+
+.s3-inner-bottom-left, .s3-inner-bottom-right{
+    width: 35%;
+}
+
+
+.s3-inner-bottom-left, .s3-inner-bottom-right {
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.s3-inner-bottom-right{
+    justify-content: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 26px;
+    color: #272D2D;
+
+}
+
+.s3-inner-bottom-left>div:nth-child(1){
+    display: flex;
+    justify-content: flex-end;
+    height: 150px;
+}
+
+.s3-inner-bottom-left>div>img{
+    width: 150px;
+    transform: translateY(60px) rotate(-15deg);
+    animation: myAnim 4s ease-in-out 0s infinite normal both;
+
+}
+
+.s3-inner-bottom-left div:nth-child(2){
+    background: #F2F9FC;
+    box-shadow: 0px 10px 30px rgba(0, 49, 82, 0.1);
+    border-radius: 20px;
+    padding: 50px;
+}
+
+.s3-inner-bottom-left div:nth-child(2) p{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: rgba(39, 45, 45, 0.9);
+    padding-top: 20px;
+
+} 
+
+.s4{
+    min-height: 400px;
+    padding: 50px;
+    background-color: #F2F9FC;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.s4-left{
+    width: 25%;
+}
+
+.s4-left-top{
+    text-transform: capitalize;
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 58px;
+}
+
+.s4-left-bottom{
+    margin-top: 40px;
+    flex-direction: column;
+    justify-content: center;
+    background: url(../assets/svgs/4.svg);
+    background-repeat: no-repeat;
+}
+
+.s4-left-bottom h2{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 38px;
+    color: #272D2D;
+    margin-bottom: 30px;
+}
+
+.s4-left-bottom p{
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 26px;
+    color: #272D2D;
+    text-align: justify;
+
+}
+
+.s4-right{
+    width: 35%;
+}
+
+.s4-right>div:nth-child(1){
+    display: flex;
+    justify-content: flex-end;
+}
+
+.s4-right>div>img{
+    width: 150px;
+    transform: translateY(20px) rotate(6deg);
+    animation: myAnim 4s ease-in-out 0s infinite normal both;
+
+}
+
+.s4-cards-container{
+    background: #FFFFFF;
+    box-shadow: 0px 10px 30px rgba(0, 49, 82, 0.1);
+    border-radius: 20px;
+    padding: 25px;
+}
+
+.s4-card-tpl{
+    margin: 40px 0;
+}
+
+.s4-card-tpl .s4-tpl-header{
+    display: flex;
+    align-items: center;
+}
+.s4-card-tpl .s4-tpl-header span{
+    padding: 5px;
+}
+
+.s4-card-tpl>div span:nth-child(1){
+    display: inline-flex;
+    align-items: center;
+}
+
+.s4-card-tpl .checkmark-sign img{
+    width: 25px;
+}
+
+.s4-card-tpl>div span:not(.checkmark-sign){
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 38px;
+    color: #272D2D;
+}
+
+.s4-card-tpl>div p{
+    padding: 5px;
+    padding-left: 45px;
+    padding-top: 10px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #272D2D;
+
+}
+
+@media screen and (max-width: 1120px){
+    .s3-outer{
+        width: 60%;
+    }
+
+    .s4 .s4-left,
+    .s4 .s4-right{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 768px){
+
+    .s1, .s2, .s3, .s4 {
+        padding: 20px;
+    }
+
+    .s1>div{
+        width: 50%;
+        padding: 20px;
+    }
+
+    .s3-inner-top-left, .s3-inner-top-right,
+    .s3-inner-bottom-left, .s3-inner-bottom-right{
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 630px){
+
+    .s1, .s2, .s3, .s4 {
+        flex-direction: column;
+    }
+
+    .s1 .s1-left,
+    .s1 .s1-right{
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .s2 .s2-left,
+    .s2 .s2-right{
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .s3-outer{
+        width: 100%;
+    }
+
+    .s4 .s4-left,
+    .s4 .s4-right{
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+@media screen and (max-width: 550px){
+
+    .s3-inner-top,
+    .s3-inner-bottom{
+        flex-direction: column;
+    }
+
+    .s3-inner-top-left, .s3-inner-top-right,
+    .s3-inner-bottom-left, .s3-inner-bottom-right{
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .s3-inner-top-right{
+        justify-content: center;
+    }
+
+    .s2 .s2-left,
+    .s2 .s2-right{
+        padding: 10px;
+    }
+
+}
+
+@media screen and (max-width: 320px){
+
+    .s4-card-tpl>div p {
+        padding: 15px 5px;
+    }
+
+    .main h1{
+        font-size: 50px;
+        line-height: 1.1;
+    }
+
+}
