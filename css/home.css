@@ -93,6 +93,8 @@
     align-items: center;
     min-height: 600px;
     padding: 20px 0;
+    max-width: 1600px;
+    margin: auto;
 }
 
 .second .second-left{

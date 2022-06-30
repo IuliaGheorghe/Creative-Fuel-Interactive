@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/contact.css">
+    <link rel="icon" href="/assets/images/favicon.png" type="image/x-icon">
+
     <title>Creative Fuel Interactive | Contact</title>
 </head>
 <body>
@@ -51,7 +53,7 @@
                     echo(explode("-&&&&-", base64_decode($_GET['key']))[1]);
                 }
                 ?>">
-                <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message" required><?php if(isset($_GET['success'])) if($_GET['success']=='false') {
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message" required style="resize:vertical" ><?php if(isset($_GET['success'])) if($_GET['success']=='false') {
                             echo(explode("-&&&&-", base64_decode($_GET['key']))[2]);
                         }
                     ?></textarea>
@@ -64,13 +66,14 @@
             </form>
         </div>
     </section>
+
     <footer>
         <div class="footer-top">
             <div>
                 <div class="footer-logo">
-                    <a href="../index.html"><img src="../assets/logos/logo-w.svg" alt="Logo" width="216" height="80"></a>
+                    <a href="index.html"><img src="../assets/logos/logo-w.svg" alt="Logo" width="216" height="80"></a>
                 </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                <p>We assist you in growing your business by putting all of our creativity, dedication, and ability into it.  </p>
             </div>
             <div>
                 <div>
@@ -80,18 +83,32 @@
                     <a href="contact.php" class="active-nav">Contact</a>
                 </div>
                 <div>
-                    <a href="../html/services.html">SEO</a>
-                    <a href="../html/services.html">SEM</a>
-                    <a href="../html/services.html">Branding</a>
-                    <a href="../html/services.html">Social Media Merketing</a>
+                    <a href="../html/services.html#seo">SEO</a>
+                    <a href="../html/services.html#sem">SEM</a>
+                    <a href="../html/services.html#branding">Branding</a>
+                    <a href="../html/services.html#social">Social Media Merketing</a>
                 </div>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>© Copyright 2022 Creative Fuel Interactive. All Rights Reserved.</p>
+            <p>© Copyright <script>document.write(new Date().getFullYear())</script>
+                Creative Fuel Interactive. All Rights Reserved.</p>
         </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="../js/menu.js"></script>
+    <script>
+        $( document ).ready(function() {
+            $('.fa-x').click(function() {
+
+                $('body').css({
+                    'overflow': 'auto'
+                });
+            });
+        });
+
+
+    </script>
     <?php 
         require_once("Image_Captcha_Doc/PHP Templates/image_captcha_template.php");
     ?>

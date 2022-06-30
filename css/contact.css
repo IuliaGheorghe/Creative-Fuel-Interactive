@@ -26,6 +26,8 @@
     justify-content: space-evenly;
     padding: 150px 50px;
     min-height: 400px;
+    max-width: 1600px;
+    margin: auto;
 }
 
 .form-section-left{
@@ -146,5 +148,14 @@
     .form-section-right form button{
         width: auto;
     }
+
+}
+
+
+.form-section {
+    background-image: url("/assets/images/dots.svg");
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
 
 }

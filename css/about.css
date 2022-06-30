@@ -137,6 +137,10 @@ header nav a{
     align-items: center;
 }
 
+.second-left{
+    z-index: 1;
+}
+
 .second-left h2{
     font-family: 'Space Grotesk';
     font-style: normal;
@@ -219,7 +223,7 @@ header nav a{
     position: absolute;
     bottom: 50px;
     left: -50px;
-    animation: myAnim3 3s ease-in-out 0ms infinite normal both;
+    /* animation: myAnim3 3s ease-in-out 0ms infinite normal both; */
 
 }
 

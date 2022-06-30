@@ -141,11 +141,17 @@ footer{
 }
 
 .footer-top>div:nth-child(1){
-    width: 10%;
+    width: 16%;
 }
 
 .footer-top>div:nth-child(1) p{
     padding: 20px 0;
+}
+
+@media screen and (min-width: 1279px) and (max-width: 1910px) {
+    .footer-top>div:nth-child(1) {
+        width:22%;
+    }
 }
 
 .footer-top>div:nth-child(2){
@@ -188,7 +194,7 @@ footer{
 
 .bttm-image{
     height: 400px;
-    background: url(../assets/images/g-mask.png);
+    background: url(../assets/images/g-mask.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -316,4 +322,19 @@ footer{
     .footer-logo img{
         width: 140px;
     }
+}
+section {
+    position:relative;
+}
+#sem {
+    position:absolute;
+}
+#branding {
+    position:absolute;
+}
+#seo {
+    position:absolute;
+}
+#social {
+    position:absolute;
 }
