@@ -1,3 +1,7 @@
+body{
+    overflow-x: hidden;
+}
+
 header nav a{
     color: #272D2D;
 }
